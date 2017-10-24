@@ -1,0 +1,1 @@
+<button *ngFor="let tab of tabs; let idx = index" [className]="idx === selected ? 'active' : ''" (click)="setSelected(idx)">{{tab}}</button>

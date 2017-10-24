@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.sel2 > div.done {
+  display: none;
+}
+.sel0 > div {
+  display: block;
+}
+.sel1 > div {
+  display: none;
+}
+.sel1 > div.done {
+  display: block;
+}

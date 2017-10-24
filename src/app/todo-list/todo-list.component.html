@@ -1,0 +1,3 @@
+<div *ngFor="let todo of todos" (click)="todo.done = !todo.done" [className]="todo.done ? 'done' : ''">
+  <input type="checkbox" [checked]="todo.done"><label>{{todo.content}}</label>
+</div>

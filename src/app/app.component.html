@@ -1,0 +1,3 @@
+<app-tabs (onSelectedChanged)="changeList($event)"></app-tabs>
+<app-todo-list [todos]="todos" [className]="'sel' + selectedNumber"></app-todo-list>
+<app-add-todo (onNewTodoAdded)="addNewTodo($event)"></app-add-todo>
