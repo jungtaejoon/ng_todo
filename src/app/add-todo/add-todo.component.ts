@@ -9,13 +9,17 @@ export class AddTodoComponent implements OnInit {
 
   newTodoContent: string;
   @Output() onNewTodoAdded = new EventEmitter();
-  constructor() { }
+  constructor() {
+    this.newTodoContent = '';
+  }
 
   ngOnInit() {
   }
 
   addNewTodo() {
-    this.onNewTodoAdded.emit(this.newTodoContent);
+    if(this.newTodoContent !== '') {
+      this.onNewTodoAdded.emit(this.newTodoContent);
+    }
     this.newTodoContent = '';
   }
 }
