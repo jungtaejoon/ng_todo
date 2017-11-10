@@ -15,7 +15,7 @@ import { TabsComponent } from './tabs/tabs.component';
     TabsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'my-app'}),
     FormsModule
   ],
   providers: [],
